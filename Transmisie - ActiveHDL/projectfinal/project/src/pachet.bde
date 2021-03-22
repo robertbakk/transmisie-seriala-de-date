@@ -1,0 +1,362 @@
+SCHM0106
+
+HEADER
+{
+ FREEID 43
+ VARIABLES
+ {
+  #ARCHITECTURE="arh"
+  #BLOCKTABLE_FILE="#HDL2DIAGRAM.bde"
+  #DEFAULT_RANGE0="<range<index=\"0\"><name=\"codstart\"><left=\"0\"><direction=\"to\"><right=\"6\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE1="<range<index=\"0\"><name=\"date\"><left=\"0\"><direction=\"to\"><right=\"15\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE2="<range<index=\"0\"><name=\"sumacontrol\"><left=\"0\"><direction=\"to\"><right=\"3\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE3="<range<index=\"0\"><name=\"vect\"><left=\"0\"><direction=\"to\"><right=\"26\"><initial_value=\"\"><delay=\"\">>"
+  #ENTITY="pachet"
+  #LANGUAGE="VHDL"
+  #RANGE_RESOLUTION0="<range<index=\"0\"><name=\"vect\"><left=\"0\"><direction=\"to\"><right=\"26\"><initial_value=\"\"><delay=\"\">>"
+  AUTHOR="Windows User"
+  COMPANY="UTCN"
+  CREATIONDATE="15-May-19"
+  SOURCE=".\\..\\src\\pachet_date.vhd"
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  MARGINS (200,200,200,200)
+  RECT (0,0,0,0)
+ }
+ 
+ BODY
+ {
+  VHDLDESIGNUNITHDR  1, 0, 0
+  {
+   LABEL "Design Unit Header"
+   TEXT 
+"library ieee;\n"+
+"use ieee.std_logic_1164.all;"
+   RECT (220,260,620,439)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  PROCESS  2, 0, 0
+  {
+   LABEL "process_16"
+   TEXT 
+"process (clk,reset,vect)\n"+
+"                       begin\n"+
+"                         if (vect = \"UUUUUUUUUUUUUUUUUUUUUUUUUUU\") then\n"+
+"                            vect(0 to 6) <= codstart(0 to 6);\n"+
+"                            vect(7 to 22) <= date(0 to 15);\n"+
+"                            vect(23 to 26) <= sumacontrol(0 to 3);\n"+
+"                         end if;\n"+
+"                         if (reset = '1') then\n"+
+"                            vect <= \"UUUUUUUUUUUUUUUUUUUUUUUUUUU\";\n"+
+"                         elsif (clk'event and clk = '1') then\n"+
+"                            iesire <= vect(0);\n"+
+"                            vect <= vect(1 to 26) & '0';\n"+
+"                         end if;\n"+
+"                       end process;\n"+
+"                      "
+   RECT (1080,240,1481,640)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWTEXT
+   VTX (  22, 26, 29, 32, 34, 38, 40 )
+   VARIABLES
+   {
+    #UPDATE_SENS_LIST="0"
+   }
+   LIST (  26, 34, 40 )
+  }
+  INSTANCE  3, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="clk"
+    #SYMBOL="Input"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC"
+   }
+   COORD (940,300)
+   VERTEXES ( (2,25) )
+  }
+  INSTANCE  4, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusInput"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="codstart(0:6)"
+    #SYMBOL="BusInput"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   COORD (940,380)
+   VERTEXES ( (2,28) )
+  }
+  INSTANCE  5, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusInput"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="date(0:15)"
+    #SYMBOL="BusInput"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   COORD (940,420)
+   VERTEXES ( (2,31) )
+  }
+  INSTANCE  6, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Output"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="iesire"
+    #SYMBOL="Output"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC"
+   }
+   COORD (1580,260)
+   VERTEXES ( (2,23) )
+  }
+  INSTANCE  7, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #CUSTOM_NAME=""
+    #INITIAL_VALUE="'1'"
+    #LIBRARY="#terminals"
+    #REFERENCE="reset"
+    #SYMBOL="Input"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC"
+   }
+   COORD (940,260)
+   VERTEXES ( (2,35) )
+  }
+  INSTANCE  8, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusInput"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="sumacontrol(0:3)"
+    #SYMBOL="BusInput"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   COORD (940,460)
+   VERTEXES ( (2,37) )
+  }
+  TEXT  9, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (888,300,888,300)
+   ALIGN 6
+   PARENT 3
+  }
+  TEXT  10, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (888,380,888,380)
+   ALIGN 6
+   PARENT 4
+  }
+  TEXT  11, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (888,420,888,420)
+   ALIGN 6
+   PARENT 5
+  }
+  TEXT  12, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1632,260,1632,260)
+   ALIGN 4
+   PARENT 6
+  }
+  TEXT  13, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (888,260,888,260)
+   ALIGN 6
+   PARENT 7
+  }
+  TEXT  14, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (888,460,888,460)
+   ALIGN 6
+   PARENT 8
+  }
+  NET BUS  15, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="vect(0:26)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+  }
+  NET WIRE  16, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="clk"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+  }
+  NET BUS  17, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="codstart(0:6)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+  }
+  NET BUS  18, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="date(0:15)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+  }
+  NET WIRE  19, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="iesire"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+  }
+  NET WIRE  20, 0, 0
+  {
+   VARIABLES
+   {
+    #INITIAL_VALUE="'1'"
+    #NAME="reset"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+  }
+  NET BUS  21, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="sumacontrol(0:3)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+  }
+  VTX  22, 0, 0
+  {
+   COORD (1481,260)
+  }
+  VTX  23, 0, 0
+  {
+   COORD (1580,260)
+  }
+  WIRE  24, 0, 0
+  {
+   NET 19
+   VTX 22, 23
+  }
+  VTX  25, 0, 0
+  {
+   COORD (940,300)
+  }
+  VTX  26, 0, 0
+  {
+   COORD (1080,300)
+  }
+  WIRE  27, 0, 0
+  {
+   NET 16
+   VTX 25, 26
+  }
+  VTX  28, 0, 0
+  {
+   COORD (940,380)
+  }
+  VTX  29, 0, 0
+  {
+   COORD (1080,380)
+  }
+  BUS  30, 0, 0
+  {
+   NET 17
+   VTX 28, 29
+  }
+  VTX  31, 0, 0
+  {
+   COORD (940,420)
+  }
+  VTX  32, 0, 0
+  {
+   COORD (1080,420)
+  }
+  BUS  33, 0, 0
+  {
+   NET 18
+   VTX 31, 32
+  }
+  VTX  34, 0, 0
+  {
+   COORD (1080,260)
+  }
+  VTX  35, 0, 0
+  {
+   COORD (940,260)
+  }
+  WIRE  36, 0, 0
+  {
+   NET 20
+   VTX 34, 35
+  }
+  VTX  37, 0, 0
+  {
+   COORD (940,460)
+  }
+  VTX  38, 0, 0
+  {
+   COORD (1080,460)
+  }
+  BUS  39, 0, 0
+  {
+   NET 21
+   VTX 37, 38
+  }
+  VTX  40, 0, 0
+  {
+   COORD (1080,340)
+  }
+  VTX  41, 0, 0
+  {
+   COORD (1060,340)
+  }
+  BUS  42, 0, 0
+  {
+   NET 15
+   VTX 40, 41
+  }
+ }
+ 
+}
+

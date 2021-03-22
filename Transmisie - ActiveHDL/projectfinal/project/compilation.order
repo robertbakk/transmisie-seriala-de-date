@@ -1,0 +1,12 @@
+.\src\final.vhd
+.\src\detector.vhd
+.\src\generator.vhd
+.\src\verifsuma.vhd
+.\src\verifcodstart.vhd
+.\src\pachet_primire.vhd
+.\src\pachet_date.vhd
+.\src\sumacontrol.vhd
+.\src\mux32_16.vhd
+.\src\codstart.vhd
+.\src\mux_mod.vhd
+.\src\divizor_frecv.vhd

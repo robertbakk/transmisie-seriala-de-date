@@ -1,0 +1,98 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=4
+Current Config=compile
+
+[Configurations]
+compile=project
+
+[Library]
+project=.\project\project.lib
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=0
+DisableC=0
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=ONLY_IMPL
+ON_SERVERFARM_SYNTH=0
+ON_SERVERFARM_IMPL=0
+ON_SERVERFARM_SIM=0
+DVM_DISPLAY=NO
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=0
+
+[$LibMap$]
+project=.
+Active_lib=
+
+[IMPLEMENTATION]
+UCF=
+
+[SpecTracer]
+WindowVisible=0
+
+[HierarchyViewer]
+HierarchyInformation=final|a|0     
+ShowHide=ShowTopLevel
+Selected=
+SortInfo=u
+
+[Folders]
+Name3=Makefiles
+Directory3=R:\Downloads\project2\projectfinal\project\
+Extension3=mak
+Name4=Memory
+Directory4=R:\Downloads\project2\projectfinal\project\
+Extension4=mem;mif;hex
+Name5=Dll Libraries
+Directory5=R:\Downloads\project2\projectfinal\project\
+Extension5=dll
+Name6=PDF
+Directory6=R:\Downloads\project2\projectfinal\project\
+Extension6=pdf
+Name7=HTML
+Directory7=R:\Downloads\project2\projectfinal\project\
+Extension7=htm;html
+
+[Files]
+/final.vhd=-1
+/detector.vhd=-1
+/generator.vhd=-1
+/verifsuma.vhd=-1
+/verifcodstart.vhd=-1
+/pachet_primire.vhd=-1
+/pachet_date.vhd=-1
+/sumacontrol.vhd=-1
+/mux32_16.vhd=-1
+/codstart.vhd=-1
+/mux_mod.vhd=-1
+/divizor_frecv.vhd=-1
+
+[Files.Data]
+.\src\final.vhd=VHDL Source Code
+.\src\detector.vhd=VHDL Source Code
+.\src\generator.vhd=VHDL Source Code
+.\src\verifsuma.vhd=VHDL Source Code
+.\src\verifcodstart.vhd=VHDL Source Code
+.\src\pachet_primire.vhd=VHDL Source Code
+.\src\pachet_date.vhd=VHDL Source Code
+.\src\sumacontrol.vhd=VHDL Source Code
+.\src\mux32_16.vhd=VHDL Source Code
+.\src\codstart.vhd=VHDL Source Code
+.\src\mux_mod.vhd=VHDL Source Code
+.\src\divizor_frecv.vhd=VHDL Source Code
+

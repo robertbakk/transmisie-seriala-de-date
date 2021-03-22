@@ -1,0 +1,23 @@
+1372
+~E 1 "./../src/final.vhd" 4 final
+~A 1 "./../src/final.vhd" 10 a
+~E 1 "./../src/detector.vhd" 4 det
+~A 1 "./../src/detector.vhd" 10 a
+~E 1 "./../src/codstart.vhd" 4 codstart
+~A 1 "./../src/codstart.vhd" 10 arh
+~E 1 "./../src/divizor_frecv.vhd" 6 divizor_de_frecventa
+~A 1 "./../src/divizor_frecv.vhd" 11 divizor
+~E 1 "./../src/pachet_date.vhd" 4 pachet
+~A 1 "./../src/pachet_date.vhd" 13 arh
+~E 1 "./../src/mux32_16.vhd" 4 mux32_16
+~A 1 "./../src/mux32_16.vhd" 11 mux
+~E 1 "./../src/generator.vhd" 4 generator
+~A 1 "./../src/generator.vhd" 14 a
+~E 1 "./../src/mux_mod.vhd" 4 muxmod
+~A 1 "./../src/mux_mod.vhd" 9 muxstart
+~E 1 "./../src/sumacontrol.vhd" 4 sumacontrol
+~A 1 "./../src/sumacontrol.vhd" 9 arhsuma
+~E 1 "./../src/pachet_primire.vhd" 4 pachetprimire
+~A 1 "./../src/pachet_primire.vhd" 14 arh
+~E 1 "./../src/verifsuma.vhd" 4 verifsuma
+~A 1 "./../src/verifsuma.vhd" 10 arh

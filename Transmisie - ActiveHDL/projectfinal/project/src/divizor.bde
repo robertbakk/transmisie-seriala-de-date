@@ -1,0 +1,158 @@
+SCHM0106
+
+HEADER
+{
+ FREEID 15
+ VARIABLES
+ {
+  #ARCHITECTURE="arh"
+  #BLOCKTABLE_FILE="#HDL2DIAGRAM.bde"
+  #ENTITY="divizor"
+  #LANGUAGE="VHDL"
+  AUTHOR="Windows User"
+  COMPANY="UTCN"
+  CREATIONDATE="15-May-19"
+  SOURCE=".\\..\\src\\divizor_frecv.vhd"
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  MARGINS (200,200,200,200)
+  RECT (0,0,0,0)
+ }
+ 
+ BODY
+ {
+  VHDLDESIGNUNITHDR  1, 0, 0
+  {
+   LABEL "Design Unit Header"
+   TEXT 
+"library ieee;\n"+
+"use ieee.std_logic_1164.all;\n"+
+"use ieee.std_logic_arith.all;\n"+
+"use ieee.STD_LOGIC_UNSIGNED.all;"
+   RECT (220,260,620,505)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  PROCESS  2, 0, 0
+  {
+   LABEL "process_13"
+   TEXT 
+"process (CLK_IN)\n"+
+"                         variable var_CLK : std_logic_vector(0 to 24) := (others => '0');\n"+
+"                       begin\n"+
+"                         if (CLK_IN'event and CLK_IN = '1') then\n"+
+"                            var_CLK := var_CLK + 1;\n"+
+"                         end if;\n"+
+"                         CLK_OUT <= var_CLK(0);\n"+
+"                       end process;\n"+
+"                      "
+   RECT (960,240,1361,580)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWTEXT
+   VTX (  10, 12 )
+   VARIABLES
+   {
+    #UPDATE_SENS_LIST="0"
+   }
+   LIST (  12 )
+  }
+  INSTANCE  3, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="CLK_IN"
+    #SYMBOL="Input"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC"
+   }
+   COORD (820,260)
+   VERTEXES ( (2,13) )
+  }
+  INSTANCE  4, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Output"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="CLK_OUT"
+    #SYMBOL="Output"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC"
+   }
+   COORD (1460,260)
+   VERTEXES ( (2,9) )
+  }
+  TEXT  5, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (768,260,768,260)
+   ALIGN 6
+   PARENT 3
+  }
+  TEXT  6, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1512,260,1512,260)
+   ALIGN 4
+   PARENT 4
+  }
+  NET WIRE  7, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="CLK_IN"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+  }
+  NET WIRE  8, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="CLK_OUT"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+  }
+  VTX  9, 0, 0
+  {
+   COORD (1460,260)
+  }
+  VTX  10, 0, 0
+  {
+   COORD (1361,260)
+  }
+  WIRE  11, 0, 0
+  {
+   NET 8
+   VTX 9, 10
+  }
+  VTX  12, 0, 0
+  {
+   COORD (960,260)
+  }
+  VTX  13, 0, 0
+  {
+   COORD (820,260)
+  }
+  WIRE  14, 0, 0
+  {
+   NET 7
+   VTX 12, 13
+  }
+ }
+ 
+}
+

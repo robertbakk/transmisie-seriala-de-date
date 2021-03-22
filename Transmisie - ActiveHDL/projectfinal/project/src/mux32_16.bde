@@ -1,0 +1,245 @@
+SCHM0106
+
+HEADER
+{
+ FREEID 27
+ VARIABLES
+ {
+  #ARCHITECTURE="mux"
+  #BLOCKTABLE_FILE="#HDL2DIAGRAM.bde"
+  #DEFAULT_RANGE0="<range<index=\"0\"><name=\"gen1\"><left=\"0\"><direction=\"to\"><right=\"15\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE1="<range<index=\"0\"><name=\"gen2\"><left=\"0\"><direction=\"to\"><right=\"15\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE2="<range<index=\"0\"><name=\"iesire\"><left=\"0\"><direction=\"to\"><right=\"15\"><initial_value=\"\"><delay=\"\">>"
+  #ENTITY="mux32_16"
+  #LANGUAGE="VHDL"
+  AUTHOR="Windows User"
+  COMPANY="UTCN"
+  CREATIONDATE="15-May-19"
+  SOURCE=".\\..\\src\\mux32_16.vhd"
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  MARGINS (200,200,200,200)
+  RECT (0,0,0,0)
+ }
+ 
+ BODY
+ {
+  VHDLDESIGNUNITHDR  1, 0, 0
+  {
+   LABEL "Design Unit Header"
+   TEXT 
+"library ieee;\n"+
+"use ieee.std_logic_1164.all;"
+   RECT (220,260,620,439)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  PROCESS  2, 0, 0
+  {
+   LABEL "process_13"
+   TEXT 
+"process (sel,gen1,gen2)\n"+
+"                       begin\n"+
+"                         if (sel = '0') then\n"+
+"                            iesire <= gen1;\n"+
+"                         else \n"+
+"                            iesire <= gen2;\n"+
+"                         end if;\n"+
+"                       end process;\n"+
+"                      "
+   RECT (1000,240,1401,580)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWTEXT
+   VTX (  15, 19, 21, 25 )
+   VARIABLES
+   {
+    #UPDATE_SENS_LIST="0"
+   }
+   LIST (  19, 21, 25 )
+  }
+  INSTANCE  3, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusInput"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="gen1(0:15)"
+    #SYMBOL="BusInput"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   COORD (860,340)
+   VERTEXES ( (2,18) )
+  }
+  INSTANCE  4, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusInput"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="gen2(0:15)"
+    #SYMBOL="BusInput"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   COORD (860,260)
+   VERTEXES ( (2,22) )
+  }
+  INSTANCE  5, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusOutput"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="iesire(0:15)"
+    #SYMBOL="BusOutput"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   COORD (1500,260)
+   VERTEXES ( (2,16) )
+  }
+  INSTANCE  6, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="sel"
+    #SYMBOL="Input"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC"
+   }
+   COORD (860,300)
+   VERTEXES ( (2,24) )
+  }
+  TEXT  7, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (808,340,808,340)
+   ALIGN 6
+   PARENT 3
+  }
+  TEXT  8, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (808,260,808,260)
+   ALIGN 6
+   PARENT 4
+  }
+  TEXT  9, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1552,260,1552,260)
+   ALIGN 4
+   PARENT 5
+  }
+  TEXT  10, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (808,300,808,300)
+   ALIGN 6
+   PARENT 6
+  }
+  NET BUS  11, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="gen1(0:15)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+  }
+  NET BUS  12, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="gen2(0:15)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+  }
+  NET BUS  13, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="iesire(0:15)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+  }
+  NET WIRE  14, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="sel"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+  }
+  VTX  15, 0, 0
+  {
+   COORD (1401,260)
+  }
+  VTX  16, 0, 0
+  {
+   COORD (1500,260)
+  }
+  BUS  17, 0, 0
+  {
+   NET 13
+   VTX 15, 16
+  }
+  VTX  18, 0, 0
+  {
+   COORD (860,340)
+  }
+  VTX  19, 0, 0
+  {
+   COORD (1000,340)
+  }
+  BUS  20, 0, 0
+  {
+   NET 11
+   VTX 18, 19
+  }
+  VTX  21, 0, 0
+  {
+   COORD (1000,260)
+  }
+  VTX  22, 0, 0
+  {
+   COORD (860,260)
+  }
+  BUS  23, 0, 0
+  {
+   NET 12
+   VTX 21, 22
+  }
+  VTX  24, 0, 0
+  {
+   COORD (860,300)
+  }
+  VTX  25, 0, 0
+  {
+   COORD (1000,300)
+  }
+  WIRE  26, 0, 0
+  {
+   NET 14
+   VTX 24, 25
+  }
+ }
+ 
+}
+

@@ -1,0 +1,40 @@
+Active-HDL 10.5.217.6767 2019-05-20 19:06:51
+
+Elaboration top modules:
+Architecture                  a(final)
+
+
+----------------------------------------------------------------------------------------------
+Entity        | Architecture | Library | Info | Compiler Version        | Compilation Options
+----------------------------------------------------------------------------------------------
+final         | a            | project |      | 10.5.217.6767 (Windows) | -O3
+divizor       | arh          | project |      | 10.5.217.6767 (Windows) | -O3
+generator     | a            | project |      | 10.5.217.6767 (Windows) | -O3
+det           | a            | project |      | 10.5.217.6767 (Windows) | -O3
+muxmod        | arh          | project |      | 10.5.217.6767 (Windows) | -O3
+codstart      | arh          | project |      | 10.5.217.6767 (Windows) | -O3
+mux32_16      | mux          | project |      | 10.5.217.6767 (Windows) | -O3
+sumacontrol   | arh          | project |      | 10.5.217.6767 (Windows) | -O3
+pachet        | arh          | project |      | 10.5.217.6767 (Windows) | -O3
+pachetprimire | arh          | project |      | 10.5.217.6767 (Windows) | -O3
+verifsuma     | arh          | project |      | 10.5.217.6767 (Windows) | -O3
+verifcodstart | arh          | project |      | 10.5.217.6767 (Windows) | -O3
+----------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------
+VHDL Package                 | Library | Info | Compiler Version        | Compilation Options
+----------------------------------------------------------------------------------------------
+standard                     | std     |      |                         | <unavailable>
+TEXTIO                       | std     |      |                         | <unavailable>
+std_logic_1164               | ieee    |      |                         | <unavailable>
+std_logic_arith              | ieee    |      |                         | <unavailable>
+STD_LOGIC_UNSIGNED           | ieee    |      |                         | <unavailable>
+----------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------
+Library                      | Comment
+----------------------------------------------------------------------------------------------
+ieee                         | Standard IEEE packages library
+project                      | None
+std                          | Standard VHDL library
+----------------------------------------------------------------------------------------------

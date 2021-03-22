@@ -1,0 +1,21 @@
+[Files List]
+R:\Active-HDL\vlib\std/src/standard.vhd=S
+R:\Active-HDL\vlib\std/src/textio.vhd=S
+R:\Active-HDL\vlib\ieee/src/std_logic_1164.vhdl=S
+R:\Active-HDL\vlib\ieee/src/std_logic_1164-body.vhdl=S
+R:\Active-HDL\vlib\ieee/src/arith_p.vhd=S
+R:\Active-HDL\vlib\ieee/src/arith_b.vhd=S
+R:\Active-HDL\vlib\ieee/src/unsigned_p.vhd=S
+R:\Active-HDL\vlib\ieee/src/unsigned_b.vhd=S
+R:\Downloads\Transmisie Bakk Balc\Transmisie - ActiveHDL\projectfinal\project/src/verifcodstart.vhd=S
+R:\Downloads\Transmisie Bakk Balc\Transmisie - ActiveHDL\projectfinal\project/src/verifsuma.vhd=S
+R:\Downloads\Transmisie Bakk Balc\Transmisie - ActiveHDL\projectfinal\project/src/sumacontrol.vhd=S
+R:\Downloads\Transmisie Bakk Balc\Transmisie - ActiveHDL\projectfinal\project/src/pachet_primire.vhd=S
+R:\Downloads\Transmisie Bakk Balc\Transmisie - ActiveHDL\projectfinal\project/src/pachet_date.vhd=S
+R:\Downloads\Transmisie Bakk Balc\Transmisie - ActiveHDL\projectfinal\project/src/mux32_16.vhd=S
+R:\Downloads\Transmisie Bakk Balc\Transmisie - ActiveHDL\projectfinal\project/src/codstart.vhd=S
+R:\Downloads\Transmisie Bakk Balc\Transmisie - ActiveHDL\projectfinal\project/src/mux_mod.vhd=S
+R:\Downloads\Transmisie Bakk Balc\Transmisie - ActiveHDL\projectfinal\project/src/detector.vhd=S
+R:\Downloads\Transmisie Bakk Balc\Transmisie - ActiveHDL\projectfinal\project/src/generator.vhd=S
+R:\Downloads\Transmisie Bakk Balc\Transmisie - ActiveHDL\projectfinal\project/src/divizor_frecv.vhd=S
+R:\Downloads\Transmisie Bakk Balc\Transmisie - ActiveHDL\projectfinal\project/src/final.vhd=S

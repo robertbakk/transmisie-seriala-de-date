@@ -1,0 +1,20 @@
+xst -intstyle ise -ifn "D:/finalnexys4/final.xst" -ofn "D:/finalnexys4/final.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-1 final.ngc final.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc final.ucf -p xc7a100t-csg324-1 final.ngc final.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o final_map.ncd final.ngd final.pcf 
+par -w -intstyle ise -ol high -mt off final_map.ncd final.ncd final.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml final.twx final.ncd -o final.twr final.pcf -ucf final.ucf 
+xst -intstyle ise -ifn "R:/Downloads/Transmisie Bakk Balc/Transmisie - Xilinx/final.xst" -ofn "R:/Downloads/Transmisie Bakk Balc/Transmisie - Xilinx/final.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc final.ucf -p xc7a100t-csg324-1 "final.ngc" final.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o final_map.ncd final.ngd final.pcf 
+par -w -intstyle ise -ol high -mt off final_map.ncd final.ncd final.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml final.twx final.ncd -o final.twr final.pcf -ucf final.ucf 
+xst -intstyle ise -ifn "R:/Downloads/Transmisie Bakk Balc/Transmisie - Xilinx/final.xst" -ofn "R:/Downloads/Transmisie Bakk Balc/Transmisie - Xilinx/final.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc final.ucf -p xc7a100t-csg324-1 "final.ngc" final.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o final_map.ncd final.ngd final.pcf 
+par -w -intstyle ise -ol high -mt off final_map.ncd final.ncd final.pcf 
+xst -intstyle ise -ifn "R:/Downloads/Transmisie Bakk Balc/Transmisie - Xilinx/final.xst" -ofn "R:/Downloads/Transmisie Bakk Balc/Transmisie - Xilinx/final.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc final.ucf -p xc7a100t-csg324-1 "final.ngc" final.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o final_map.ncd final.ngd final.pcf 
+par -w -intstyle ise -ol high -mt off final_map.ncd final.ncd final.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml final.twx final.ncd -o final.twr final.pcf -ucf final.ucf 
